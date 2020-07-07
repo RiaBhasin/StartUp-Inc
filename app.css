@@ -1,0 +1,310 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font: normal 16px sans-serif;
+	color: #555;
+}
+
+.main{
+	background-image: url("https://source.unsplash.com/ebbFZvavGy4");
+	z-index: -1;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-color: #80a3db;
+}
+header nav{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	margin-right: -15px;
+}
+ul {
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	opacity: 0.75;
+	color: white;
+}
+
+a:hover{
+	opacity: 1;
+}
+
+header{
+	display: flex;
+	position: absolute;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 35px 100px 0;
+	opacity: 0;
+	animation: 1s fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn{
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+header h2 {
+	font-family: "Quicksand", sans-serif;
+}
+
+header nav li{
+	margin: 0 15px;
+}
+
+@media (max-width: 800px) {
+	header {
+		padding: 20px 50px;
+		flex-direction: column;
+	}
+
+	header h2 {
+		margin-bottom: 15px;
+	}
+}
+a.btn{
+	border-radius: 4px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	background-color: #3f51b5;
+	opacity: 1;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px 80px;
+}
+
+section:not(.hero):nth-child(even) {
+	background-color: #f5f5f5;
+}
+#part2{
+	background-color: snow;
+	padding: 4rem 1rem;
+	height: stretch;
+}
+
+#food{
+	margin: 2rem;
+}
+
+#food:after{
+	 display:block;
+     content: '';
+     background-color: mediumturquoise;
+     height: 2px;
+     transform: scaleX(1);
+     width:10%;
+     margin: 0 auto;
+     margin-top: 1rem;
+     margin-bottom: 6rem;
+}
+
+#text2{
+	 text-align: center;
+	 margin:0 8vw;
+}
+
+p{
+	margin-bottom: 1rem;
+}
+
+#cols{
+	margin: 1.5rem 0 1rem 0;
+}
+
+#cols i{
+	margin: 2rem 0 1rem 0;
+	color: mediumturquoise;
+}
+
+.fadeIn{
+	animation-name: fadeIn;
+}
+
+
+.animated{
+	animation-duration: 2s;
+}
+
+.intro {
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: nowrap;
+	font-family: "Quicksand", sans-serif;
+	justify-content: center;
+	font-weight: bold;
+}
+
+.bars {
+	height: 30px;
+	background-color: mediumturquoise	;
+	width: 560px;
+	display: flex;
+	flex-direction: row;	
+	margin: 20px;
+	font-weight: bold;
+}
+
+.bars div {
+	padding-left: 10px;
+}
+
+#project {
+	margin: 2rem;
+}
+
+#project:after{
+	 display:block;
+     content: '';
+     background-color: mediumturquoise;
+     height: 2px;
+     transform: scaleX(1);
+     width:60%;
+     margin: 0 auto;
+     margin-top: 1rem;
+     margin-bottom: 6rem;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+}
+
+.item {
+	margin: 20px;
+	height: 30px;
+	width: 110px;
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px
+}
+
+.item:hover {
+
+	color: white;
+    background-color: mediumturquoise;
+
+}
+.photos{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: 120px;
+}
+
+.photos img {
+	width: 30%;
+	height: 300px;
+	opacity: 1;
+}
+
+.photos img:hover {
+	opacity: 0.3;
+}
+
+#blogtitle {
+	margin: 2rem;
+}
+
+#blogtitle:after{
+	 display:block;
+     content: '';
+     background-color: mediumturquoise;
+     height: 2px;
+     transform: scaleX(1);
+     width:60%;
+     margin: 0 auto;
+     margin-top: 1rem;
+     margin-bottom: 6rem;
+}
+
+#part7{
+	padding: 4rem 1rem;
+	background: #ECE9E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#newheading{
+	text-align: center;
+}
+
+#newheading:after{
+	 display:block;
+     content: '';
+     background-color: mediumturquoise;
+     height: 2px;
+     transform: scaleX(1);
+     width:10%;
+     margin: 0 auto;
+     margin-top: 1rem;
+     margin-bottom: 2rem;
+     }
+
+#form{
+	margin-left: 25%;
+}
+
+#form p{
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+
+#form button{
+	margin-top: 20px;
+	margin-left: 45%;
+}
+
+#form textarea{
+	height: 100px;
+}
+
+footer{
+   background-color: dimgray;
+   padding: 1rem;
+}
+
+.handles{
+	display: flex;
+}
+
+.nav a{
+   color: black;
+}
+
+.nav a:hover{
+	color: white;
+}
+
+.media{
+	justify-content: flex-end;
+	margin-left: 40%;
+}
+
+.media i{
+	color: black;
+	font-size: 1.7rem;
+}
+
+.media i:hover{
+	color: mediumturquoise;
+}
